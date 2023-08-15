@@ -1,1 +1,2 @@
-console.log('This is a test');
+import { pageLoad } from './page-load';
+pageLoad();
