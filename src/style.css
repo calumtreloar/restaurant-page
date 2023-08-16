@@ -47,6 +47,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 .card {
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.9);
@@ -91,6 +95,16 @@ p {
   cursor: pointer;
 }
 
+.home:hover,
+.menu:hover,
+.contact:hover {
+  border-bottom: 2px solid rgb(188, 253, 154);
+}
+
+.selected {
+  color: rgb(188, 253, 154);
+}
+
 .card-container {
   display: grid;
   grid-template: 1fr 1fr / 1fr 1fr 1fr;
@@ -103,7 +117,7 @@ h3 {
 
 .contact-card {
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 25px;
+  padding: 0 25px 15px 25px;
 }
 
 img {

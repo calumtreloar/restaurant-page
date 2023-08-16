@@ -13,14 +13,23 @@ let contact = document.querySelector('.contact');
 home.addEventListener('click', () => {
   main.innerHTML = '';
   makeCard();
+  home.classList.add('selected');
+  menu.classList.remove('selected');
+  contact.classList.remove('selected');
 });
 
 menu.addEventListener('click', () => {
   main.innerHTML = '';
   menuPageLoad();
+  menu.classList.add('selected');
+  home.classList.remove('selected');
+  contact.classList.remove('selected');
 });
 
 contact.addEventListener('click', () => {
   main.innerHTML = '';
   contactPageLoad();
+  contact.classList.add('selected');
+  home.classList.remove('selected');
+  menu.classList.remove('selected');
 });
