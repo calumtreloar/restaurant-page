@@ -1,3 +1,4 @@
+import './style.css';
 import { homePageLoad, makeCard } from './home';
 import { menuPageLoad } from './menu';
 import { contactPageLoad } from './contact';
