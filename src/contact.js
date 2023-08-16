@@ -1,3 +1,7 @@
+import location from './images/map-marker.svg';
+import message from './images/message.svg';
+import phone from './images/phone.svg';
+
 export function contactPageLoad() {
   const content = document.getElementById('content');
 
@@ -10,6 +14,7 @@ export function contactPageLoad() {
 
   // Text element for the card
   const cardInfo = document.createElement('h2');
+  cardInfo.className = 'contact-card-info';
   cardInfo.textContent = `GET IN TOUCH`;
 
   // Create container for address, phone and email
@@ -21,7 +26,7 @@ export function contactPageLoad() {
   addressContainer.className = 'address-container';
 
   const addressImg = document.createElement('img');
-  addressImg.src = '/images/map-marker.svg';
+  addressImg.src = location;
 
   const addressTitle = document.createElement('h3');
   addressTitle.textContent = 'ADDRESS';
@@ -35,7 +40,7 @@ export function contactPageLoad() {
   phoneContainer.className = 'phone-container';
 
   const phoneImg = document.createElement('img');
-  phoneImg.src = '/images/phone.svg';
+  phoneImg.src = phone;
 
   const phoneTitle = document.createElement('h3');
   phoneTitle.textContent = 'PHONE';
@@ -50,7 +55,7 @@ export function contactPageLoad() {
   emailContainer.className = 'email-container';
 
   const emailImg = document.createElement('img');
-  emailImg.src = '/images/message.svg';
+  emailImg.src = message;
 
   const emailTitle = document.createElement('h3');
   emailTitle.textContent = 'EMAIL';
