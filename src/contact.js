@@ -26,7 +26,7 @@ export function contactPageLoad() {
   addressContainer.className = 'address-container';
 
   const addressImg = document.createElement('img');
-  addressImg.src = location;
+  addressImg.src = '/src/images/map-marker.svg';
 
   const addressTitle = document.createElement('h3');
   addressTitle.textContent = 'ADDRESS';
@@ -40,7 +40,7 @@ export function contactPageLoad() {
   phoneContainer.className = 'phone-container';
 
   const phoneImg = document.createElement('img');
-  phoneImg.src = phone;
+  phoneImg.src = '/src/images/phone.svg';
 
   const phoneTitle = document.createElement('h3');
   phoneTitle.textContent = 'PHONE';
@@ -55,7 +55,7 @@ export function contactPageLoad() {
   emailContainer.className = 'email-container';
 
   const emailImg = document.createElement('img');
-  emailImg.src = message;
+  emailImg.src = '/src/images/message.svg';
 
   const emailTitle = document.createElement('h3');
   emailTitle.textContent = 'EMAIL';
