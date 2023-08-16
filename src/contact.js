@@ -1,6 +1,6 @@
-import location from './images/map-marker.svg';
-import message from './images/message.svg';
-import phone from './images/phone.svg';
+import addressIcon from './images/map-marker.png';
+import phoneIcon from './images/phone.png';
+import emailIcon from './images/message.png';
 
 export function contactPageLoad() {
   const content = document.getElementById('content');
@@ -25,8 +25,8 @@ export function contactPageLoad() {
   const addressContainer = document.createElement('div');
   addressContainer.className = 'address-container';
 
-  const addressImg = document.createElement('img');
-  addressImg.src = '/src/images/map-marker.svg';
+  const addressImg = new Image();
+  addressImg.src = addressIcon;
 
   const addressTitle = document.createElement('h3');
   addressTitle.textContent = 'ADDRESS';
@@ -39,8 +39,8 @@ export function contactPageLoad() {
   const phoneContainer = document.createElement('div');
   phoneContainer.className = 'phone-container';
 
-  const phoneImg = document.createElement('img');
-  phoneImg.src = '/src/images/phone.svg';
+  const phoneImg = new Image();
+  phoneImg.src = phoneIcon;
 
   const phoneTitle = document.createElement('h3');
   phoneTitle.textContent = 'PHONE';
@@ -54,8 +54,8 @@ export function contactPageLoad() {
   const emailContainer = document.createElement('div');
   emailContainer.className = 'email-container';
 
-  const emailImg = document.createElement('img');
-  emailImg.src = '/src/images/message.svg';
+  const emailImg = new Image();
+  emailImg.src = emailIcon;
 
   const emailTitle = document.createElement('h3');
   emailTitle.textContent = 'EMAIL';

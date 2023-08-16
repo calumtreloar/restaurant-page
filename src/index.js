@@ -2,9 +2,6 @@ import './style.css';
 import { homePageLoad, makeCard } from './home';
 import { menuPageLoad } from './menu';
 import { contactPageLoad } from './contact';
-import location from './images/map-marker.svg';
-import message from './images/message.svg';
-import phone from './images/phone.svg';
 
 homePageLoad();
 
