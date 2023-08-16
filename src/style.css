@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@700&family=Roboto&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -5,6 +7,8 @@
 body {
   display: flex;
   flex-direction: column;
+  background-image: url('/images/sushi-plate.jpg');
+  background-size: cover;
 
   margin: 0;
 }
@@ -21,14 +25,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('/images/sushi.jpg');
-  background-size: cover;
+
   flex: 1;
 }
 
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
 .nav-bar {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: 15px 0;
 }
 
 h1 {
@@ -38,9 +49,24 @@ h1 {
 
 .card {
   padding: 15px;
-  background: linear-gradient(to right, #000000 0%, #092132 50%, #144e75 100%);
-  width: 400px;
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 50%;
 }
+
+.home-card {
+  font-size: 1.5rem;
+  font-style: italic;
+  letter-spacing: 2px;
+  line-height: 2;
+  width: 100%;
+}
+
+.menu-card {
+  width: 400px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
 p {
   color: white;
 }
@@ -48,13 +74,78 @@ p {
 .header,
 .footer {
   color: white;
-  background: linear-gradient(to right, #000000 0%, #092132 50%, #144e75 100%);
 }
 
 .footer {
   display: flex;
+  justify-content: space-evenly;
+  background: linear-gradient(135deg, #020a0f 0%, #000000 50%, #071c2a 100%);
+}
+
+.home,
+.menu,
+.contact {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.card-container {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+}
+
+h2,
+h3 {
+  color: white;
+}
+
+.contact-card {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 25px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Merriweather', serif;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-container {
+  display: flex;
   justify-content: center;
 }
-.author {
+
+.contact-card-info {
   text-align: center;
+}
+
+.address-container,
+.phone-container,
+.email-container {
+  width: 33%;
+}
+
+.author,
+.image-attr {
+  font-family: 'Merriweather', serif;
+  padding: 5px;
 }
